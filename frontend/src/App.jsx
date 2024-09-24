@@ -1,9 +1,14 @@
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button, ButtonGroup, Container, Stack } from '@chakra-ui/react'
+import { Navbar } from './components/Navbar';
+
 function App() {
 return (
-    <>
-      <Button>Hello</Button>
-    </>
+    <Stack minH={"100vh"}>  {/*Stack is going to put everything in the vertical direction*/}
+      <Navbar />
+      <Container maxW={"1200px"} my={4}>
+
+      </Container>
+    </Stack>
   )
 }
 
