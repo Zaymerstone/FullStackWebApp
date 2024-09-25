@@ -2,6 +2,8 @@ import { Box, Container, Flex, Text, useColorMode, Button, useColorModeValue} fr
 import React from 'react'
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
+import CreateUserModal from './CreateUserModal'; // Correctly importing the default export
+
 
 export const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -25,6 +27,7 @@ export const Navbar = () => {
                 <Button onClick={toggleColorMode}>
                     {colorMode === "light" ? <IoMoon /> : <LuSun size={20} />}
                 </Button>
+                <CreateUserModal />
                 </Flex>
             </Flex>
         </Box>

@@ -1,5 +1,6 @@
-import { Button, ButtonGroup, Container, Stack, Text } from '@chakra-ui/react'
+import { Container, Stack, Text } from '@chakra-ui/react'
 import { Navbar } from './components/Navbar';
+import UserGrid from './components/UserGrid';
 
 function App() {
 return (
@@ -15,13 +16,17 @@ return (
       mb={8}
       >
         <Text
-        as={"span"}
+          as={"span"}
+          bgGradient="linear(to-r, cyan.400, blue.500)"
+          bgClip="text"
         
         >
           My Besties
         </Text>
         🚀
       </Text>
+
+      <UserGrid />
       </Container>
     </Stack>
   )
