@@ -1,6 +1,7 @@
-import { Card, CardHeader, Flex, Avatar, Box, Heading, Text, IconButton } from '@chakra-ui/react'
-import React from 'react'
-import { BiTrash } from 'react-icons/bi'
+import { Card, CardHeader, CardBody, Flex, Avatar, Box, Heading, Text, IconButton } from '@chakra-ui/react'
+import React from 'react';
+import { BiTrash } from 'react-icons/bi';
+import EditModal from "./EditModal";
 
 const UserCard = ({user}) => {
   return (
@@ -16,7 +17,7 @@ const UserCard = ({user}) => {
                     </Box>
                 </Flex>
                 <Flex>
-                    {/* <EditModal user={user} />*/}
+                    <EditModal />
                     <IconButton
                     variant={"ghost"}
                     colorScheme='red'
@@ -27,6 +28,11 @@ const UserCard = ({user}) => {
                 </Flex>
             </Flex>
         </CardHeader>
+        <CardBody>
+            <Text>
+                {user.description}
+            </Text>
+        </CardBody>
     </Card>
   )
 }
