@@ -37,7 +37,7 @@ def create_friend():
         
         db.session.add(new_friend) #staging area as if in git
         db.session.commit() # commit to the db as if in git
-        return jsonify({"msg":"friend created success"}), 201
+        return jsonify(new_friend.to_json()), 201
     except Exception as e:
         db.session.rollback()    
         return jsonify({"error":str(e)}), 500
