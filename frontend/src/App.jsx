@@ -1,11 +1,13 @@
 import { Container, Stack, Text } from '@chakra-ui/react'
 import { Navbar } from './components/Navbar';
 import UserGrid from './components/UserGrid';
+import { useState } from 'react';
 
 function App() {
+  const [users, setUsers] = useState([])
 return (
     <Stack minH={"100vh"}>  {/*Stack is going to put everything in the vertical direction*/}
-      <Navbar />
+      <Navbar setUsers={setUsers}/>
       <Container maxW={"1200px"} my={4}>
       <Text
       fontSize={{base: "3x1", md: "50"}}
@@ -26,7 +28,7 @@ return (
         🚀
       </Text>
 
-      <UserGrid />
+      <UserGrid users={users} setUsers={setUsers}/>
       </Container>
     </Stack>
   )
