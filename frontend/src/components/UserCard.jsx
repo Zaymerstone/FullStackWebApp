@@ -49,7 +49,10 @@ const UserCard = ({user, setUsers}) => {
                     </Box>
                 </Flex>
                 <Flex>
-                    <EditModal />
+                    <EditModal 
+                    user = {user}
+                    setUsers = {setUsers}
+                    />
                     <IconButton
                     variant={"ghost"}
                     colorScheme='red'
