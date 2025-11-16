@@ -59,24 +59,34 @@ This project was done purely to strengthen full-stack development skills, with e
 
 ## 📚 Getting Started
 
-### Install Backend Dependencies
+### Install Dependencies
 
 ```bash
+# 1. Install backend dependencies
 cd backend
 pip install -r requirements.txt
 
-## Install frontend dependencies
+# 2. Install frontend dependencies
 cd frontend
 npm install
 
-## Run backend
+# 3. Run backend
 cd backend
 flask run
 
-## Run frontend
+# 4. Run frontend
 cd frontend
 npm start
 Open http://localhost:3000
  to view the app in your browser.
  ```
- ### TEST
+ ### 👤 Author
+
+**Nesterov Egor**  
+BSc in Computer Science  
+Software Engineer Intern | Full-stack Developer Intern
+
+**Contact:**
+- 📧 Email: [egor.nesterov2002@gmail.com](mailto:egor.nesterov2002@gmail.com)  
+- 🔗 LinkedIn: [linkedin.com/in/enesterov22](https://www.linkedin.com/in/enesterov22/)  
+- 💬 Telegram: [t.me/Zaymerstone](https://t.me/Zaymerstone)
