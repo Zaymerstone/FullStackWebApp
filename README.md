@@ -27,12 +27,11 @@ This project was done purely to strengthen full-stack development skills, with e
 - React  
 - Chakra UI  
 - JavaScript  
-- React-dom  
 
 ### **Backend**
 - Python Flask  
 - SQLAlchemy ORM  
-- SQLite/PostgreSQL (your choice)  
+- SQLite  
 - REST API  
 
 ### **Architecture**
